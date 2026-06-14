@@ -3,10 +3,10 @@ import './Counter.css'
 
 export default function Counter() {
   const [count, setCount] = useState(0)
-  function increament() {
+  function increment() {
     setCount(count + 1)
   }
-  function decreament() {
+  function decrement() {
     setCount(count - 1)
   }
   function reset() {
@@ -17,11 +17,11 @@ export default function Counter() {
       <div className="container">
         <p>{count}</p>
         <div className='btn-container'>
-          <button className="btn" onClick={increament}>
-            increament
+          <button className="btn" onClick={increment}>
+            increment
           </button>
-          <button className="btn" onClick={decreament}>
-            decreament
+          <button className="btn" onClick={decrement}>
+            decrement
           </button>
           <button className="btn" onClick={reset}>
             reset
